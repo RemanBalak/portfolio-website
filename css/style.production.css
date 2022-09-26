@@ -161,6 +161,13 @@ button:active {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+  .page-header__item {
+    margin-left: 0;
+    width: 100px;
+  }
+  main {
+    padding: 15px;
+  }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
