@@ -92,7 +92,7 @@ button:active {
   border-bottom: solid;
   border-width: 1px;
   border-color: grey;
-  background-color: green;
+  background-color: var(--primary-color);
 }
 .page-header__item {
   flex: 0 1 200px;
