@@ -5,71 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="https://wikipedia.com/static/favicon/wikipedia.ico"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png" />
     <title>Contact Reman Balak</title>
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/style.production.css" type="text/css" />
   </head>
   <body>
     <header class="page-header">
-      <img
-        class="page-header__item"
-        src="img/reman_balak_logo.png"
-        alt="logo of my website"
-      />
+      <a href="index.html">
+        <img
+          class="header__website-logo"
+          src="img/favicon.png"
+          alt="logo of website"
+        />
+      </a>
       <nav class="main-navigation page-header__item">
         <ul class="navigation-list" role="menubar">
           <li role="presentation">
-            <a href="index.html" role="menuitem">Home</a>
+            <a class="page-header__item--home" href="index.html" role="menuitem"
+              >Home</a
+            >
           </li>
 
           <li role="presentation">
-            <a href="about.html" role="menuitem">About</a>
+            <a
+              class="page-header__item--about"
+              href="about.html"
+              role="menuitem"
+              >About</a
+            >
           </li>
           <li role="presentation">
-            <a href="projects.html" role="menuitem">Projects</a>
+            <a
+              class="page-header__item--projects"
+              href="projects.html"
+              role="menuitem"
+              >Projects</a
+            >
           </li>
 
           <li role="presentation">
-            <a href="contact.html" role="menuitem">Contact</a>
+            <a
+              class="page-header__item--contact"
+              href="contact.html"
+              role="menuitem"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
     </header>
 
-    <h1>Contact</h1>
-
     <main>
-      If you'd like to make an enquiry, please feel free to get in touch, and I
-      will respond as soon as possible.
-
-      <a href="tel:+4917645920320"> +49 17645920320</a> <br />
-      <a href="mailto:reman1999@outlook.com?subject=Enquiry"> Email me</a>
-
       <form action="#" method="post">
-        <label class="standard-label" for="contact-email"> Email</label>
-        <input type="email" id="contact-email" required />
+        <div class="container__contact-form">
+          <div class="contact-box">
+            <div class="left">
+              <h2 class="container__contact-form--text">
+                If you'd like to make an enquiry, please feel free to get in
+                touch, and I will respond as soon as possible.
+              </h2>
 
-        <label class="standard-label" for="contact-tel">Telephone</label>
-        <input type="Tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+              <a class="call-button" href="tel:+4917645920320"> Call me</a>
 
-        <label class="standard-label" for="contact-text">Message</label>
-        <textarea maxlength="240" id="contact-text" required></textarea>
-        <input type="submit" value="Send Message" />
+              <a
+                class="email-button"
+                href="mailto:reman1999@outlook.com?subject=Enquiry"
+              >
+                Email me</a
+              >
+
+              <div class="image-container">
+                <img
+                  class="cologne-image"
+                  src="img/cologne.png"
+                  alt="photo of cologne"
+                />
+              </div>
+            </div>
+            <div class="right">
+              <h2>Contact Me</h2>
+              <label class="standard-label" for="contact-email"> Email</label>
+              <input class="field" type="email" id="contact-email" required />
+
+              <label class="standard-label" for="contact-tel">Telephone</label>
+              <input
+                class="field"
+                type="Tel"
+                id="contact-tel"
+                pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+              />
+
+              <label class="standard-label" for="contact-text">Message</label>
+              <textarea
+                class="field"
+                maxlength="240"
+                id="contact-text"
+                required
+              ></textarea>
+              <input
+                class="contact-button"
+                type="submit"
+                value="Send Message"
+              />
+            </div>
+          </div>
+        </div>
       </form>
     </main>
 
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
-        <img src="img/github_logo.svg" alt="Github" />
-        <img src="img/twitter_logo.svg" alt="Twitter" />
-        <img src="img/linkedin_logo.svg" alt="LinkedIn" />
+        <a href="https://github.com/RemanBalak" target="_blank"
+          ><img src="img/github_logo.svg" alt="Github" />
+        </a>
+
+        <a href="https://www.reddit.com/user/remanbalak" target="_blank"
+          ><img src="img/reddit_logo.svg" alt="Reddit" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/reman-balak-326036185/"
+          target="_blank"
+          ><img src="img/linkedin_logo.svg" alt="LinkedIn" />
+        </a>
       </div>
     </footer>
     <script src="../js/tota11y.min.js"></script>

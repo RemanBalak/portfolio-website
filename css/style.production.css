@@ -26,13 +26,21 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
 a {
+  text-decoration: none;
+}
+.page-header__item--home,
+.page-header__item--about,
+.page-header__item--projects,
+.page-header__item--contact {
+  color: var(--text-color);
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  text-decoration: underline;
+  text-decoration: none;
   opacity: 0.7;
 }
 a:active {
@@ -72,10 +80,11 @@ button:active {
   background-color: #04c2c9;
   color: #161718;
 }
+
 .profile__portrait {
   float: left;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   margin-right: 40px;
   border-radius: 50%;
   -o-object-fit: cover;
@@ -99,18 +108,34 @@ button:active {
   margin: 0 auto;
   text-align: left;
 }
-
+.profile__header {
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0px;
+}
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   width: 100%;
-  height: 70px;
+  height: 80px;
   padding: 20px;
   border-bottom: solid;
   border-width: 1px;
   border-color: grey;
   background-color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header__website-logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+}
+.page-header__logo {
+  color: var(--text-color);
 }
 .page-header__item {
   -webkit-box-flex: 0;
@@ -128,8 +153,9 @@ button:active {
 .navigation-list,
 .navigation-list:visited {
   list-style-type: none;
-  color: var(--text-color);
+  color: white;
 }
+
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
@@ -251,5 +277,145 @@ button:active {
   to {
     -webkit-transform: translate(100px, 48px);
     transform: translate(100px, 48px);
+  }
+}
+
+/* contact form below*/
+
+.container__contact-form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.container__contact-form:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("img/bg.jpg") no-repeat center;
+  background-size: cover;
+  filter: blur(50px);
+  z-index: -1;
+}
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.left {
+  background: url("img/bg.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+.right {
+  padding: 25px 40px;
+}
+
+h2 {
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+}
+
+h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+}
+
+.field {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  min-height: 150px;
+}
+
+.contact-button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-button:hover,
+.call-button:hover,
+.email-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.container__contact-form--text {
+  margin: 45px 10px 40px 10px;
+}
+.call-button,
+.email-button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container__contact-form--link,
+.container__contact-form--link:visited {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.cologne-image {
+  width: 250px;
+  display: block;
+  align-items: bottom;
+}
+.cologne-image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+@media screen and (max-width: 880px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
   }
 }

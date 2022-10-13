@@ -5,37 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="https://wikipedia.com/static/favicon/wikipedia.ico"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png" />
     <title>About</title>
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/style.production.css" type="text/css" />
   </head>
   <body>
     <header class="page-header">
-      <img
-        class="page-header__item"
-        src="img/reman_balak_logo.png"
-        alt="logo of my website"
-      />
+      <a href="index.html">
+        <img
+          class="header__website-logo"
+          src="img/favicon.png"
+          alt="logo of website"
+        />
+      </a>
       <nav class="main-navigation page-header__item">
         <ul class="navigation-list" role="menubar">
           <li role="presentation">
-            <a href="index.html" role="menuitem">Home</a>
+            <a class="page-header__item--home" href="index.html" role="menuitem"
+              >Home</a
+            >
           </li>
           <li role="presentation">
-            <a href="about.html" role="menuitem">About</a>
+            <a
+              class="page-header__item--about"
+              href="about.html"
+              role="menuitem"
+              >About</a
+            >
           </li>
           <li role="presentation">
-            <a href="projects.html" role="menuitem">Projects</a>
+            <a
+              class="page-header__item--projects"
+              href="projects.html"
+              role="menuitem"
+              >Projects</a
+            >
           </li>
 
           <li role="presentation">
-            <a href="contact.html" role="menuitem">Contact</a>
+            <a
+              class="page-header__item--contact"
+              href="contact.html"
+              role="menuitem"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -57,11 +71,12 @@
         <li>Test driven development</li>
       </ul>
 
-      <a href="files/cv.pdf" class="button" download>Download my CV</a>
+      <a href="files/CV.pdf" class="button" download>Download my CV</a>
       <svg
         id="about-picture"
         xmlns="http://www.w3.org/2000/svg"
-        class="berlin-illustration"       viewbox="0 0 700 505"
+        class="berlin-illustration"
+        viewbox="0 0 700 505"
         xmlns:xlink="http://www.w3.org/1999/xlink"
       >
         <defs>
@@ -2128,9 +2143,18 @@
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
-        <img src="img/github_logo.svg" alt="Github" />
-        <img src="img/twitter_logo.svg" alt="Twitter" />
-        <img src="img/linkedin_logo.svg" alt="LinkedIn" />
+        <a href="https://github.com/RemanBalak" target="_blank"
+          ><img src="img/github_logo.svg" alt="Github" />
+        </a>
+
+        <a href="https://www.reddit.com/user/remanbalak" target="_blank"
+          ><img src="img/reddit_logo.svg" alt="Reddit" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/reman-balak-326036185/"
+          target="_blank"
+          ><img src="img/linkedin_logo.svg" alt="LinkedIn" />
+        </a>
       </div>
     </footer>
     <script src="../js/tota11y.min.js"></script>

@@ -5,12 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="https://wikipedia.com/static/favicon/wikipedia.ico"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png" />
     <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,27 +18,47 @@
   </head>
   <body>
     <header class="page-header">
-      <img
-        class="page-header__item"
-        src="img/reman_balak_logo.png"
-        alt="logo of my website"
-      />
+      <a href="index.html">
+        <img
+          class="header__website-logo"
+          src="img/favicon.png"
+          alt="logo of website"
+        />
+      </a>
+
       <nav class="main-navigation page-header__item">
         <ul class="navigation-list" role="menubar">
           <li role="presentation">
-            <a href="index.html" role="menuitem">Home</a>
+            <a class="page-header__item--home" href="index.html" role="menuitem"
+              >Home</a
+            >
           </li>
 
           <li role="presentation">
-            <a href="about.html" role="menuitem">About</a>
+            <a
+              class="page-header__item--about"
+              href="about.html"
+              role="menuitem"
+              >About</a
+            >
           </li>
 
           <li role="presentation">
-            <a href="projects.html" role="menuitem">Projects</a>
+            <a
+              class="page-header__item--projects"
+              href="projects.html"
+              role="menuitem"
+              >Projects</a
+            >
           </li>
 
           <li role="presentation">
-            <a href="contact.html" role="menuitem">Contact</a>
+            <a
+              class="page-header__item--contact"
+              href="contact.html"
+              role="menuitem"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -58,12 +73,17 @@
           alt="Reman Balak Portrait"
         />
 
-        <h1>Hello World!</h1>
+        <h1 class="profile__header">
+          Hi, I'm
+          <span style="color: var(--secondary-color)"> Reman Balak</span>. A Web
+          Developer.
+        </h1>
+
         <p>
           My name is Reman Balak. I am a <span>web</span> developer from
           Germany.
         </p>
-        <a href="#">Check out some of my code</a>
+        <a href="projects.html">Check out some of my code</a>
       </div>
 
       <br />
